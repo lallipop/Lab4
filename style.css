@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+}
+
+.select {
+    position: relative;
+    width: 200px;
+    float: left;
+}
+
+.option {
+    box-sizing: border-box;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    border: 1px solid grey;
+    padding: 9px 0 9px 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #0f161d;
+}
+
+.list {
+    display: none;
+    width: 99%;
+    padding: 0;
+    background: #2c3e50;
+    border: 1px solid grey;
+}
+
+.list li {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 9px 0 9px 20px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.list li:hover{
+    background: #0f161d;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    padding: .8em 1.4em;
+    padding-right: 4.7em;
+    margin-left: 20px;
+    height: 40px;
+    margin-top: 4px;
+    background: #009ED8;
+    border: none;
+    color: white;
+    transition: .2s;
+}
+.button:before,
+.button:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    transition: .2s;
+    transform-origin: 50% 60%;
+}
+.button:before {
+    background: rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+    background: #0079a5;
+}
+.button:active{
+    background: #002e3f;
+    outline: none;
+}
+.button {
+    min-width: 15em;
+}
+.arrow {
+    background: #557a93;
+}
+.arrow:hover {
+    background: #2c3e50;
+}
+.arrow:active {
+    background: #1c2837;
+}
+.arrow:after {
+    content: "\F054";
+}
+.arrow:hover:after {
+    -webkit-animation: bounceright .3s alternate ease infinite;
+    animation: bounceright .3s alternate ease infinite;
+}
+
+@-webkit-keyframes bounceright {
+    from {
+        -webkit-transform: translateX(0);
+    }
+    to {
+        -webkit-transform: translateX(3px);
+    }
+}
+@-webkit-keyframes wiggle {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(30deg);
+    }
+}
+@keyframes bounceright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3px);
+    }
+}
+@keyframes wiggle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
+
+.canvasik {
+    width: 400px !important;
+    height: 400px !important;
+}

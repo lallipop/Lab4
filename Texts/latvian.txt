@@ -1,0 +1,14 @@
+Dažreiz vēstules tiek nosūtītas divos formātos.
+Šis iestatījums kontrolē vai rādīt HTML daļu vai
+vienkāršā teksta daļu. Rādot HTML daļu vēstules
+saturs izskatīsies smukāk, bet tas arī palielina
+risku, ka tiks izmantota kāda drošības ievainojamība.
+Rādot vienkāršu tekstu tiks zaudēts gandrīz viss vēsules
+formatējums, bet tas parara praktiski neiespējami
+izmantot kādu HTML attēlotāja(Konqueror) drošības problēmu.
+Zemākā iespēja aizsargā pret vienu no lielākajām HTML vēstuļu
+ļaunprātīgas izmantošanas iespējām, bet tā nepasargāno drošības
+problēmām, kas vēl nav atklātas KMail rakstīšanas brīdī.
+Tāpēc ieteicams nelietot HTML vienkāršā teksta vietā.
+Piezīme: Jūs varat katrimapei individuāli mainīt šo
+iesatījumu KMail galvenā loga izvēlnē Mape
